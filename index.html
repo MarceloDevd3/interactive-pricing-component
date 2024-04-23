@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link href="./css/style.css" rel="stylesheet" >
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+  <title>Frontend Mentor | Interactive pricing component</title>
+</head>
+<body>
+  <main class="container">
+    <section class="headline">
+        <h1>Simple, traffic-based pricing</h1>
+      <p class="gray">Sign-up for our 30-day trial. <br> No credit card required. </p>
+    </section>
+    <article class="card-container">
+       <section class="card">
+         <div class="style-line">
+          <div class="row">
+            <h2 class="gray"><span id="price-tag1">100k</span> <span class=" gray-txt">pageviews</span></h2>
+            <h3 class="price-tag pri2"><span class="price price2">$16.00</span> <span class="porcent gray"> / <span class="year--or--Month">month</span> </span></h3>
+          </div> 
+           <label>
+             <input type="range" min="0" max="4"  class="slider--range" id="range" >
+            </label>
+           <h3 class="price-tag pri1"><span class="price price1">$16.00</span> <span class="porcent gray"> / <span class="year--or--Month">month</span> </span></h3>
+          </div>
+         <div class="switch-line row">
+           <h4 class="gray">Monthly Billing</h4>
+         <div class="switch">
+           <input type="checkbox" id="switch" class="checked">
+          <label for="switch" class="switch-label">
+           <span class="invisible">invisibl</span>
+          </label>
+         </div>
+         <h4 class="gray">Yearly Billing <span class="discount"> -25% </span></h4>
+         </div>
+         </div>
+         <article class="card-sub-info">
+            <div id="one-line"></div>
+           
+          
+            <div id="mini-rodape">
+              <div class="block0">
+                <div class="line-item">
+                  <div class="block">
+                    <img src="./images/icon-check.svg" alt="seta">
+                  </div>
+                  <h5 class="gray">Unlimited websites</h5>
+                </div>
+                <div class="line-item">
+                  <div class="block">
+                    <img src="./images/icon-check.svg" alt="seta">
+                  </div>
+                  <h5 class="gray">100% data ownership</h5>
+                </div>
+                <div class="line-item">
+                  <div class="block">
+                    <img src="./images/icon-check.svg" alt="seta">
+                  </div>
+                  <h5 class="gray">Email reports</h5>
+                </div>
+              </div>
+              <div class="block1">
+                <button class="btn">Start my trial</button>
+              </div>
+            </div>
+           
+         </article>
+       </section>
+    </article>
+  </main>
+  
+</body>
+
+<script src="/js/princig-component.js">
+</script>
+</html>
